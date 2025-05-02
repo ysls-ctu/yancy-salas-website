@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yancy Salas</title>
+  <link rel="icon" type="image/png" href="/Photo/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/CSS/main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="/JS/main.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    :root {
+      --primary: #082e17;
+      --secondary: #1b462c;
+      --accent: #406d52;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <header class="bg-[var(--primary)] text-white sticky top-0 z-50 shadow-md">
+    <!-- Title -->
+    <div class="text-center py-4">
+      <h1 class="text-3xl font-bold">YANCY SALAS</h1>
+      <a href="https://mail.google.com/mail/?view=cm&to=salas000y@gmail.com" target="_blank"
+        class="text-[white] font-semiboldunderline"
+        style="text-decoration: none;">
+        salas000y@gmail.com
+      </a>
+      <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <a href="https://wa.link/7x1v8d" target="_blank"
+        class="text-[white] font-semiboldunderline"
+        style="text-decoration: none;">
+        +63 945 605 8005
+      </a>
+    </div>
+  
+    <!-- Toggle Button for Mobile -->
+    <div class="md:hidden flex justify-center">
+      <button id="menu-toggle" class="text-3xl text-white focus:outline-none mt-[-1rem] mb-2">
+        ▾
+      </button>
+    </div>
+  
+    <!-- Navigation Menu -->
+    <nav id="nav-menu" class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8 bg-[var(--secondary)] py-2 text-sm md:text-base hidden md:flex">
+      <a href="#about" class="hover:text-gray-300 duration-200">About</a>
+      <a href="#education" class="hover:text-gray-300 duration-200">Education</a>
+      <a href="#experience" class="hover:text-gray-300 duration-200">Experience</a>
+      <a href="#projects" class="hover:text-gray-300 duration-200">Projects</a>
+      <a href="#skills" class="hover:text-gray-300 duration-200">Skills</a>
+      <a href="#contact" class="hover:text-gray-300 duration-200">Contact</a>
+    </nav>
+  </header>
+  
+  <section id="about" class="py-20 flex flex-col items-center bg-white-200 px-6">
+    <div class="w-full max-w-4xl">
+      
+      <div class="w-full md:w-[50%] flex justify-center mx-auto">
+        <img
+          src="/Photo/me2.png"
+          alt="Yancy Salas"
+          class="custom-img-animation"
+        />
+      </div>
+  
+      <br><br><br>
+  
+      <div class="w-full md:w-[85%] mx-auto text-left">
+        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+          Hi, I'm <span class="text-lg font-semibold text-[var(--accent)]">Yancy</span> — part data analyst, part creative explorer, full-time curious human.
+          I translate messy data into meaning, automate the boring stuff, and build tools that actually make life (and work) easier.
+          <span class="text-lg font-semibold text-[var(--accent)]">Python</span> is my main sidekick,
+          <span class="text-lg font-semibold text-[var(--accent)]">SQL</span> helps me make sense of things,
+          and lately I’ve been tinkering with <span class="text-lg font-semibold text-[var(--accent)]">Firebase</span> and <span class="text-lg font-semibold text-[var(--accent)]">Unity</span> just for the fun (and learning) of it.
+        </p>
+      
+        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+          I’m on a journey from data analyst to data scientist — and I'm not just collecting datasets, I’m collecting stories.
+          Whether it’s streamlining inventory logistics or uncovering patterns that others miss, I approach every challenge like a puzzle waiting to be solved
+          (preferably with good coffee and better music).
+        </p>
+      
+        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+          When I’m not elbow-deep in data, you’ll catch me <span class="italic">sketching, painting, throwing knives (yep, safely!), making music, running, cycling</span>,
+          or planning my next spontaneous getaway. I believe in staying curious, staying weird, and always finding the signal in the noise.
+        </p>
+      
+        <p class="text-gray-700 text-lg leading-relaxed">
+          This site? It’s more than a portfolio — it’s a peek into how I think, build, and occasionally geek out.
+          Feel free to click around, download my résumé, or just say hello.
+        </p>
+      </div>
+      
+  
+    </div>
+  </section>
+  
+  <section id="education" class="py-20 flex flex-col items-center bg-gray-200 px-6">
+    <h2 class="text-4xl font-bold text-green-900 mb-10 ">Education</h2>
+    <div class="text-left max-w-3xl bg-white p-8" style="border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+      <div class="relative border-l-4 border-[#0d602e] pl-8 space-y-10">
+        <div class="group text-left"> 
+          <div class="absolute w-4 h-4 bg-[#0d602e] rounded-full -left-2.5 mt-1"></div>
+          <h3 class="text-xl font-semibold text-[#082e17] group-hover:translate-x-1 transition-transform duration-300">Bachelor of Science in Information Technology</h3>
+          <p class="text-md text-gray-700 group-hover:translate-x-1 transition-transform duration-300">Cebu Technological University - Main</p>
+          <p class="text-sm text-gray-700 group-hover:translate-x-1 transition-transform duration-300">Aug 2021 - June 2025</p>
+          <p class="text-sm text-gray-600 mt-1 group-hover:translate-x-1 transition-transform duration-300">Thesis: POCKETCOLLEGE - A 2D MOBILE SIMULATION GAME FOR INCOMING SENIOR HIGH SCHOOL STUDENTS</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#0d602e] text-white">Data Structures & Algorithm</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#186d3a] text-white">Web Development</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#082e17] text-white">Information Management</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#0d602e]/80 text-white">System Analysis</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#186d3a]/80 text-white">Mobile App Development</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#082e17]/80 text-white">Networking</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#0d602e] text-white">Information Assurance & Security</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#186d3a] text-white">Quantitative Methods: Modelling & Simulation</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#082e17] text-white">Human Computer Interaction</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#0d602e]/80 text-white">Discrete Mathematics</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#186d3a]/80 text-white">System Administration & Maintenance</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#082e17]/80 text-white">Object-Oriented Programming</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#082e17]/80 text-white">Networking</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#0d602e] text-white">System Integration & Architecture</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#186d3a] text-white">Digital Logic Design</span>
+            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#082e17] text-white">Game Development</span>
+          </div>
+        </div>
+        <div class="group text-left"> 
+            <div class="absolute w-4 h-4 bg-[#0d602e] rounded-full -left-2.5 mt-1"></div>
+            <h3 class="text-xl font-semibold text-[#082e17] group-hover:translate-x-1 transition-transform duration-300">Senior High School – STEM Strand</h3>
+            <p class="text-md text-gray-700 group-hover:translate-x-1 transition-transform duration-300">University of Cebu</p>
+            <p class="text-sm text-gray-700 group-hover:translate-x-1 transition-transform duration-300">Aug 2019 - June 2021</p>
+            <p class="text-sm text-gray-600 mt-1 group-hover:translate-x-1 transition-transform duration-300">Thesis: Papermaking Abilities of <i>I. Aquatica</i> (Water Spinach) and <i>T. Catappa</i> (Talisay Tree) Leaves with Sodium Hypochlorite and Calcium Carbonate as Additives</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#0d602e] text-white">Robotics</span>
+              <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#186d3a] text-white">Pre-Calculus</span>
+              <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#082e17] text-white">Basic Calculus</span>
+              <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#0d602e]/80 text-white">General Chemistry</span>
+              <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#186d3a]/80 text-white">General Physics</span>
+              <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#082e17]/80 text-white">General Biology</span>
+              <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#186d3a] text-white">SPSS</span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="experience" class="py-20 bg-white-200 px-4 sm:px-6 lg:px-12">
+    <h2 class="text-4xl font-bold text-green-900 text-center mb-12">Experience</h2>
+    <div class="max-w-7xl mx-auto space-y-8">
+      <div class="bg-white shadow-md hover:shadow-xl rounded-2xl p-6 md:w-3/4 transition-shadow duration-300 mx-auto">
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+          <h3 class="text-xl font-semibold text-[var(--accent)]">
+            Data Entry Specialist / Logistics Analyst
+          </h3>
+          <span class="text-sm text-gray-500 mt-2 sm:mt-0">Jul 2023 – Jun 2025</span>
+        </div>
+              <p class="text-md text-gray-700 flex items-center mb-1">
+          Staff Outsourcing Solutions
+        </p>
+        <p class="text-sm text-gray-700 flex items-center mb-4">
+            7F, MDCT Building, Leyte Loop, Cebu City, 6000 Cebu
+        </p>
+
+        <div class="mb-4">
+          <button onclick="document.getElementById('exp-desc').classList.toggle('hidden'); document.getElementById('exp-icon').classList.toggle('rotate-180');"
+            class="w-full flex justify-between items-center py-2 px-4 bg-gray-100 rounded-md hover:bg-gray-200 transition">
+            <span>Job Description</span>
+            <svg id="exp-icon" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div id="exp-desc" class="hidden mt-3 text-gray-700 text-sm leading-relaxed border p-4 rounded-2xl space-y-4">
+            <div>
+              <span class="font-semibold text-[var(--accent)]">Inventory Optimization:</span>
+              Transformed and spearheaded shipment analysis from bi-weekly to daily, cutting out-of-stock rates by <span class="font-medium">65%</span>.
+            </div>
+            <div>
+              <span class="font-semibold text-[var(--accent)]">Logistics Streamlining:</span>
+              Cut shipping preparation and label generation time by <span class="font-medium">30%</span>.
+            </div>
+            <div>
+              <span class="font-semibold text-[var(--accent)]">Accuracy & Validation:</span>
+              Maintained <span class="font-medium">99%</span> shipment accuracy through cross-warehouse SKU checks and coordination.
+            </div>
+            <div>
+              <span class="font-semibold text-[var(--accent)]">Process Integrity:</span>
+              Reconciled <span class="font-medium">100%</span> of orders on time, ensuring consistent cost tracking and fulfillment flow.
+            </div>
+            <div>
+              <span class="font-semibold text-[var(--accent)]">Efficiency Impact:</span>
+              Achieved a <span class="font-medium">20%</span> increase in overall operational efficiency through structured data coordination.
+            </div>
+            <div>
+                <span class="font-semibold text-[var(--accent)]">Automation with Python:</span>
+                Reduced manual workload by <span class="font-medium">80%</span> through custom scripts. Specific gains include:
+                <div class="grid grid-cols-1 sm:grid-cols-1 gap-x-4 gap-y-1 mt-2 text-[13px] text-gray-600 ml-10">
+                  <div>• Inbound data updates — <span class="text-[var(--accent)] font-medium">70%</span> faster</div>
+                  <div>• Sales report — <span class="text-[var(--accent)] font-medium">90%</span> faster</div>
+                  <div>• PDF organizing — <span class="text-[var(--accent)] font-medium">95%</span> faster</div>
+                  <div>• Dropbox folder automation — <span class="text-[var(--accent)] font-medium">3–4 days saved</span></div>
+                  <div>• Billable weight calculation — <span class="text-[var(--accent)] font-medium">50%</span> faster, 100% accurate</div>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  
+    <div class="max-w-7xl mx-auto space-y-8 mt-4">
+        <div class="bg-white shadow-md hover:shadow-xl rounded-2xl p-6 md:w-3/4 transition-shadow duration-300 mx-auto">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+            <h3 class="text-xl font-semibold text-[var(--accent)]">
+              Amazon Customer Service Associate
+            </h3>
+            <span class="text-sm text-gray-500 mt-2 sm:mt-0">Nov 2021 – Aug 2022</span>
+          </div>
+                <p class="text-md text-gray-700 flex items-center mb-1">
+            Concentrix
+          </p>
+          <p class="text-sm text-gray-700 flex items-center mb-4">
+            2nd Floor, Building 3, 8 Newtown Blvd, Lapu-Lapu City, 6015 Cebu
+          </p>
+  
+          <div class="mb-4">
+            <button onclick="document.getElementById('exp-desc2').classList.toggle('hidden'); document.getElementById('exp-icon2').classList.toggle('rotate-180');"
+              class="w-full flex justify-between items-center py-2 px-4 bg-gray-100 rounded-md hover:bg-gray-200 transition">
+              <span>Job Description</span>
+              <svg id="exp-icon2" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor"
+                stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+  
+            <div id="exp-desc2" class="hidden mt-3 text-gray-700 text-sm leading-relaxed border p-4 rounded-2xl space-y-4">
+                <div>
+                    <span class="font-semibold text-[var(--accent)]">Customer Support Excellence:</span>
+                    Delivered prompt, empathetic, and solution-focused assistance across chat, email, and voice channels, ensuring high satisfaction scores and maintaining Amazon’s customer-centric values.
+                  </div>
+                  <div>
+                    <span class="font-semibold text-[var(--accent)]">Technical Troubleshooting:</span>
+                    Resolved issues with Amazon devices and services, including Alexa, Fire TV, and Kindle. Guided customers through real-time fixes and ensured optimal device functionality.
+                  </div>
+                  <div>
+                    <span class="font-semibold text-[var(--accent)]">Order & Account Resolution:</span>
+                    Handled concerns related to late deliveries, returns, refunds, and account access with precision and care, helping thousands of customers navigate their purchase experience smoothly.
+                  </div>
+                  <div>
+                    <span class="font-semibold text-[var(--accent)]">Process Adherence:</span>
+                    Consistently met or exceeded quality assurance benchmarks, compliance guidelines, and productivity KPIs, while managing high-volume ticket queues.
+                  </div>
+                  <div>
+                    <span class="font-semibold text-[var(--accent)]">Cross-Team Collaboration:</span>
+                    Partnered with logistics and escalation teams to resolve complex delivery issues, billing discrepancies, and fraud investigations.
+                  </div>
+                  <div>
+                    <span class="font-semibold text-[var(--accent)]">Performance Recognition:</span>
+                    Earned top-tier performance ratings and commendations for professionalism, patience, and effective conflict resolution under pressure.
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="projects" class="py-20 bg-gray-200 px-4 sm:px-6 lg:px-12">
+    <h2 class="text-4xl font-bold text-green-900 text-center mb-12">Projects</h2>
+    <div class="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
+      <!-- Project Card Start -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-sm flex flex-col">
+        <img src="/Photo/project1.png" alt="Project Image" class="rounded-t-xl w-full h-[200px] object-cover object-center" style="border-bottom: solid var(--accent) 5px" />
+        <div class="p-5 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-green-900 mb-2">Personal Expense Tracker</h3>
+          <div class="flex flex-wrap gap-2 mt-2 text-xs font-medium text-white">
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">Python</span>
+            <span class="bg-[var(--secondary)] px-2 py-1 rounded">Streamlit</span>
+            <span class="bg-[var(--accent)] px-2 py-1 rounded">Firebase</span>
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">Cloudinary</span>
+          </div><br>
+          <!-- Expander -->
+          <details class="mb-3">
+            <summary class="cursor-pointer text-sm text-green-800 font-medium hover:underline">Project Description</summary>
+            <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+                A web app that helps users track their expenses efficiently, with Firebase integration for secure data storage. The app allows users to log, edit, and delete expenses in real-time while offering detailed analytics reports to gain insights into spending habits.
+            </p>
+          </details>
+          <div class="mt-auto flex gap-4">
+            <a href="https://github.com/ysls-ctu/Personal_Expense_Tracker" target="_blank" class="text-sm text-green-800 hover:underline">GitHub</a>
+            <a href="https://ysls-personal-expense-tracker.streamlit.app/" target="_blank" class="text-sm text-green-800 hover:underline">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project Card End -->
+      <!-- Project Card Start -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-sm flex flex-col">
+        <img src="/Photo/project2.png" alt="Project Image" class="rounded-t-xl w-full h-[200px] object-cover object-center" style="border-bottom: solid var(--accent) 5px"/>
+        <div class="p-5 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-green-900 mb-2">PocketCollege</h3>
+          <div class="flex flex-wrap gap-2 mt-2 text-xs font-medium text-white">
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">C#</span>
+            <span class="bg-[var(--secondary)] px-2 py-1 rounded">Unity 2D</span>
+            <span class="bg-[var(--accent)] px-2 py-1 rounded">Firebase</span>
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">Flutter</span>
+            <span class="bg-[var(--secondary)] px-2 py-1 rounded">Dart</span>
+          </div><br>
+          <!-- Expander -->
+          <details class="mb-3">
+            <summary class="cursor-pointer text-sm text-green-800 font-medium hover:underline">Project Description</summary>
+            <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+              A 2D mobile simulation game designed to address the preparedness gap of Junior High School (JHS) for Senior High School (SHS) education. Through gamified lessons, randomized scenarios, and user-driven decision-making, the game helps students navigate the transition to SHS, fostering critical thinking and cognitive skills essential for success in higher education.
+            </p>
+          </details>
+          <div class="mt-auto flex gap-4">
+            <a href="https://github.com/ysls-ctu/Personal_Expense_Tracker" target="_blank" class="text-sm text-green-800 hover:underline">GitHub</a>
+            <a href="https://ysls-personal-expense-tracker.streamlit.app/" target="_blank" class="text-sm text-green-800 hover:underline">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project Card End -->
+       <!-- Project Card Start -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-sm flex flex-col">
+        <img src="/Photo/project3.png" alt="Project Image" class="rounded-t-xl w-full h-[200px] object-cover object-center" style="border-bottom: solid var(--accent) 5px" />
+        <div class="p-5 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-green-900 mb-2">PDF Organizer</h3>
+          <div class="flex flex-wrap gap-2 mt-2 text-xs font-medium text-white">
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">Python</span>
+            <span class="bg-[var(--secondary)] px-2 py-1 rounded">Streamlit</span>
+          </div><br>
+          <!-- Expander -->
+          <details class="mb-3">
+            <summary class="cursor-pointer text-sm text-green-800 font-medium hover:underline">Project Description</summary>
+            <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+              A Streamlit-powered web app that automates splitting and grouping Amazon shipping labels. Upload PDF files and an Excel file, and the app will organize labels by model number for easy processing.
+            </p>
+          </details>
+          <div class="mt-auto flex gap-4">
+            <a href="https://github.com/ysls-ctu/PDF_Organizer_Updated" target="_blank" class="text-sm text-green-800 hover:underline">GitHub</a>
+            <a href="https://pdf-organizer-ysls.streamlit.app/" target="_blank" class="text-sm text-green-800 hover:underline">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project Card End -->
+      <!-- Project Card Start -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-sm flex flex-col">
+        <img src="/Photo/project5.jpg" alt="Project Image" class="rounded-t-xl h-48 object-cover w-full"  style="border-bottom: solid var(--accent) 5px">
+        <div class="p-5 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-green-900 mb-2">shopNswap</h3>
+          <div class="flex flex-wrap gap-2 mt-2 text-xs font-medium text-white">
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">PHP</span>
+            <span class="bg-[var(--secondary)] px-2 py-1 rounded">HTML</span>
+            <span class="bg-[var(--accent)] px-2 py-1 rounded">Tailwind CSS</span>
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">JavaScript</span>
+            <span class="bg-[var(--secondary)] px-2 py-1 rounded">MySQL</span>
+          </div><br>
+          <!-- Expander -->
+          <details class="mb-3">
+            <summary class="cursor-pointer text-sm text-green-800 font-medium hover:underline">Project Description</summary>
+            <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+              A web app designed to address the gap in university platforms that facilitate the buying, selling, renting, and borrowing of goods and services among students within campus premises.
+            </p>
+          </details>
+          <div class="mt-auto flex gap-4">
+            <a href="https://github.com/ysls-ctu/shopNswap-copy" target="_blank" class="text-sm text-green-800 hover:underline">GitHub</a>
+            <a href="https://ysls-personal-expense-tracker.streamlit.app/" target="_blank" class="text-sm text-green-800 hover:underline">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project Card End -->
+      <!-- Project Card Start -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-sm flex flex-col">
+        <img src="/Photo/project5.jpg" alt="Project Image" class="rounded-t-xl h-48 object-cover w-full"  style="border-bottom: solid var(--accent) 5px">
+        <div class="p-5 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-green-900 mb-2">shopNswap</h3>
+          <div class="flex flex-wrap gap-2 mt-2 text-xs font-medium text-white">
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">PHP</span>
+            <span class="bg-[var(--secondary)] px-2 py-1 rounded">HTML</span>
+            <span class="bg-[var(--accent)] px-2 py-1 rounded">Tailwind CSS</span>
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">JavaScript</span>
+            <span class="bg-[var(--secondary)] px-2 py-1 rounded">MySQL</span>
+          </div><br>
+          <!-- Expander -->
+          <details class="mb-3">
+            <summary class="cursor-pointer text-sm text-green-800 font-medium hover:underline">Project Description</summary>
+            <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+              A web app designed to address the gap in university platforms that facilitate the buying, selling, renting, and borrowing of goods and services among students within campus premises.
+            </p>
+          </details>
+          <div class="mt-auto flex gap-4">
+            <a href="https://github.com/ysls-ctu/shopNswap-copy" target="_blank" class="text-sm text-green-800 hover:underline">GitHub</a>
+            <a href="https://ysls-personal-expense-tracker.streamlit.app/" target="_blank" class="text-sm text-green-800 hover:underline">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project Card End -->
+      <!-- Project Card Start -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-sm flex flex-col">
+        <img src="/Photo/project5.jpg" alt="Project Image" class="rounded-t-xl h-48 object-cover w-full"  style="border-bottom: solid var(--accent) 5px">
+        <div class="p-5 flex flex-col h-full">
+          <h3 class="text-xl font-semibold text-green-900 mb-2">shopNswap</h3>
+          <div class="flex flex-wrap gap-2 mt-2 text-xs font-medium text-white">
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">PHP</span>
+            <span class="bg-[var(--secondary)] px-2 py-1 rounded">HTML</span>
+            <span class="bg-[var(--accent)] px-2 py-1 rounded">Tailwind CSS</span>
+            <span class="bg-[var(--primary)] px-2 py-1 rounded">JavaScript</span>
+            <span class="bg-[var(--secondary)] px-2 py-1 rounded">MySQL</span>
+          </div><br>
+          <!-- Expander -->
+          <details class="mb-3">
+            <summary class="cursor-pointer text-sm text-green-800 font-medium hover:underline">Project Description</summary>
+            <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+              A web app designed to address the gap in university platforms that facilitate the buying, selling, renting, and borrowing of goods and services among students within campus premises.
+            </p>
+          </details>
+          <div class="mt-auto flex gap-4">
+            <a href="https://github.com/ysls-ctu/shopNswap-copy" target="_blank" class="text-sm text-green-800 hover:underline">GitHub</a>
+            <a href="https://ysls-personal-expense-tracker.streamlit.app/" target="_blank" class="text-sm text-green-800 hover:underline">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project Card End -->
+    </div>
+  </section>
+  
+  <section id="skills" class="py-20 bg-white-200 px-4 sm:px-6 lg:px-12">
+    <h2 class="text-4xl font-bold text-green-900 text-center mb-12">Skills</h2>
+  
+    <!-- Hard Skills Container -->
+    <div class="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-[32rem]">
+        <h3 class="text-xl font-semibold text-center text-green-900 mb-7 mt-5">Programming Languages & Scripting</h3>
+        <div class="flex flex-wrap justify-center gap-6 mb-7">
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/python.png" alt="Python" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Python</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/csharp.png" alt="C#" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">C#</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/php.png" alt="PHP" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">PHP</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-[32rem]">
+        <h3 class="text-xl font-semibold text-center text-green-900 mb-7 mt-5">Data Analysis</h3>
+        <div class="flex flex-wrap justify-center gap-6 mb-7">
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/excel.png" alt="Excel" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Advanced MS Excel</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/jupyter.png" alt="Jupyter" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Jupyter Notebook</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/powerbi.png" alt="Power BI" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Power BI</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/streamlit.png" alt="Streamlit" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Streamlit</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-[32rem]">
+        <h3 class="text-xl font-semibold text-center text-green-900 mb-7 mt-5">E-commerce & Supply Chain Management</h3>
+        <div class="flex flex-wrap justify-center gap-6 mb-7">
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/inflow.png" alt="Inflow" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Inflow Cloud</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/extensiv.png" alt="Extensiv" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Extensiv 3PL</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/amazon.png" alt="Amazon" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Amazon Seller Central</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/shopify.png" alt="Shopify" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Shopify</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-[32rem]">
+        <h3 class="text-xl font-semibold text-center text-green-900 mb-7 mt-5">Database Management</h3>
+        <div class="flex flex-wrap justify-center gap-6 mb-7">
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/firebase.png" alt="Firebase" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Firebase</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/mysql.png" alt="MySQL" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">MySQL</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/postgres.png" alt="PostgreSQL" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-[32rem]">
+        <h3 class="text-xl font-semibold text-center text-green-900 mb-7 mt-5">Productivity</h3>
+        <div class="flex flex-wrap justify-center gap-6 mb-7">
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/microsoft.png" alt="Microsoft 365" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Microsoft 365</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/google.png" alt="Google Workspace" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Google Workspace</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-[32rem]">
+        <h3 class="text-xl font-semibold text-center text-green-900 mb-7 mt-5">Web Development</h3>
+        <div class="flex flex-wrap justify-center gap-6 mb-7">
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/html.png" alt="HTML" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">HTML 5</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/tailwind.png" alt="Tailwind CSS" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Tailwind CSS</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/js.png" alt="JavaScript" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">JavaScript</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-[32rem]">
+        <h3 class="text-xl font-semibold text-center text-green-900 mb-7 mt-5">UI/UX & Design</h3>
+        <div class="flex flex-wrap justify-center gap-6 mb-7">
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/canva.png" alt="Canva" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Canva</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/figma.png" alt="Figma" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Figma</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/illustrator.png" alt="illustrator" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Adobe Illustrator</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/lucidchart.png" alt="lucidchart" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Lucidchart</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-[32rem]">
+        <h3 class="text-xl font-semibold text-center text-green-900 mb-7 mt-5">Game Development</h3>
+        <div class="flex flex-wrap justify-center gap-6 mb-7">
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/unity.png" alt="Unity" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Unity</span>
+          </div>
+          <div class="flex flex-col items-center w-24">
+            <img src="/Photo/spine.png" alt="Spine" class="h-12 mb-2">
+            <span class="text-sm text-center font-semibold text-green-900">Spine</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="py-20 bg-gray-200 px-4 sm:px-6 lg:px-12">
+  
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <p class="text-lg text-gray-700">
+        Whether you have a project in mind, a question, or just want to connect—I'm just a click away!
+        <br />
+        Email me at
+        <a href="https://mail.google.com/mail/?view=cm&to=salas000y@gmail.com" target="_blank"
+          class="text-[var(--secondary)] font-semibold hover:text-[var(--accent)] transition-colors duration-200 underline">
+          salas000y@gmail.com
+        </a>
+
+      </p>
+    </div>
+    <div id="socialLinksWrapper" class="social-links-wrapper">
+    
+      <div class="social-box">
+        <a href="https://github.com/ysls-ctu" target="_blank" class="social-button">
+          <i class="fab fa-github text-lg group-hover:scale-110 transition-transform"></i>&nbsp;&nbsp;&nbsp;GitHub
+        </a>
+      </div>
+  
+      <div class="social-box">
+        <a href="https://linkedin.com/in/yancy-salas-yncysls" target="_blank" class="social-button">
+          <i class="fab fa-linkedin text-lg group-hover:scale-110 transition-transform"></i>&nbsp;&nbsp;&nbsp;LinkedIn
+        </a>
+      </div>
+      <div class="social-box">
+        <a href="https://github.com/ysls-ctu" target="_blank" class="social-button">
+          <i class="fab fa-instagram text-lg group-hover:scale-110 transition-transform"></i>&nbsp;&nbsp;&nbsp;Instagram
+        </a>
+      </div>
+  
+      <div class="social-box">
+        <a href="https://linkedin.com/in/yancy-salas-yncysls" target="_blank" class="social-button">
+          <i class="fab fa-facebook text-lg group-hover:scale-110 transition-transform"></i>&nbsp;&nbsp;&nbsp;Facebook
+        </a>
+      </div>
+      <div class="social-box">
+        <a href="https://github.com/ysls-ctu" target="_blank" class="social-button">
+          <i class="fab fa-telegram text-lg group-hover:scale-110 transition-transform"></i>&nbsp;&nbsp;&nbsp;Telegram
+        </a>
+      </div>
+      <div class="social-box">
+        <a href="https://wa.link/7x1v8d" target="_blank" class="social-button">
+          <i class="fab fa-whatsapp text-lg group-hover:scale-110 transition-transform"></i>&nbsp;&nbsp;&nbsp;WhatsApp
+        </a>
+      </div>
+      <div class="social-box">
+        <a href="https://open.spotify.com/user/31q3oakdxxabw7db375o2dhjwut4?si=a35925c793174797" target="_blank" class="social-button">
+          <i class="fab fa-spotify text-lg group-hover:scale-110 transition-transform"></i>&nbsp;&nbsp;&nbsp;Spotify
+        </a>
+      </div>
+      <div class="social-box">
+        <a href="https://linkedin.com/in/yancy-salas-yncysls" target="_blank" class="social-button">
+          <i class="fas fa-coffee text-lg group-hover:scale-110 transition-transform"></i>&nbsp;&nbsp;&nbsp;Buy Me a Coffee
+        </a>
+      </div>
+    </div>
+    <div class="flex justify-center mt-5">
+      <a href="/File/Resume_YancySalas.pdf"
+         download="Resume_YancySalas.pdf"
+         class="inline-block py-3 px-6 text-white font-bold rounded-full transition duration-300 ease-in-out
+                bg-[#14532d] border-2 border-[#14532d] text-center
+                hover:text-[#14532d] hover:bg-white">
+          Download My Resume
+      </a>
+  </div>
+  </section>
+
+  <section id="contact" class="py-2 bg-[var(--primary)] px-4 sm:px-6 lg:px-12">
+    <div class="back-top">
+      <a href="#" >
+        <span id="arrow-up">▲</span><br>
+        <h1>Back to top </h1>
+      </a>
+    </div>
+  
+
+  </section>
+</body>
+</html>

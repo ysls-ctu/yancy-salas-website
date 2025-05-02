@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yancy's Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="/JS/script.js"></script>
+  <style>
+    .hidden-section { display: none; }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform-style: preserve-3d;
+      }
+
+  </style>
+</head>
+<body class="bg-aliceblue text-gray-800 font-sans">
+
+  <!-- Mobile Top Bar -->
+  <div class="md:hidden flex items-center justify-between bg-green-950 text-white p-4">
+    <h1 class="text-xl font-bold"></h1>
+    <button id="menuToggle" class="focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside id="sidebar"
+        class="bg-green-950 text-white p-6 z-20 fixed inset-y-0 left-0 transform -translate-x-full transition-transform duration-300 ease-in-out
+                md:static md:translate-x-0 md:w-80 md:block w-full overflow-y-auto max-h-screen">
+
+        <!-- Close button only visible on mobile -->
+        <div class="flex justify-end md:hidden">
+            <button id="closeSidebar" class="text-white text-2xl font-bold hover:text-red-400">&times;</button>
+        </div>
+
+        <div class="flex justify-center mb-5">
+          <div class="rotating-image">
+            <img src="/Photo/me2.png" alt="Yancy's Profile Photo"
+            class="rounded-full shadow-xl w-40 h-40 object-cover" />
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-center">YANCY SALAS</h2>
+        <span><center>Data Analyst</center></span>
+        <br />
+        <center>
+          <a href="//github.com/ysls-ctu" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-github" style="font-size:36px; padding-bottom:20px;" id="icons"></i>&nbsp;&nbsp;
+          </a>
+          <a href="//www.linkedin.com/in/yancy-salas-yncysls/" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-linkedin-square" style="font-size:36px; padding-bottom:20px;" id="icons"></i>&nbsp;&nbsp;
+          </a>
+          <a href="//www.facebook.com › yancy.salas.7" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-facebook-square" style="font-size:36px; padding-bottom:20px;" id="icons"></i>&nbsp;&nbsp;
+          </a>
+          <a href="//www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-instagram" style="font-size:36px; padding-bottom:20px;" id="icons"></i>&nbsp;&nbsp;
+          </a>
+          <a href="mailto:salas000y@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-google" style="font-size:36px; padding-bottom:20px;" id="icons"></i>&nbsp;&nbsp;
+          </a>
+
+
+        </center>
+        
+        
+        <nav class="space-y-4">
+            <hr>
+            <button class="w-full text-left transition-colors duration-200 hover:text-green-300" onclick="showSection('about')">About Me</button><hr>
+            <button class="w-full text-left transition-colors duration-200 hover:text-green-300" onclick="showSection('education')">Education</button><hr>
+            <button class="w-full text-left transition-colors duration-200 hover:text-green-300" onclick="showSection('experience')">Experience</button><hr>
+            <button class="w-full text-left transition-colors duration-200 hover:text-green-300" onclick="showSection('projects')">Projects</button><hr>
+            <button class="w-full text-left transition-colors duration-200 hover:text-green-300" onclick="showSection('skills')">Skills</button><hr>
+            <button class="w-full text-left transition-colors duration-200 hover:text-green-300" onclick="showSection('contact')">Contact</button><hr>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 bg-white min-h-screen ">
+      <section id="about" class="section">
+        <section class="bg-white py-16 px-6 md:px-12 lg:px-24">
+          <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-4xl font-bold text-green-900 mb-4">About Me</h2>
+              <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                Hello! I'm <span class="font-semibold text-[#082e17]-600">Yancy</span>, a data analyst on an exciting journey toward becoming a data scientist. 
+                I turn chaos into clarity with <span class="font-semibold">Python</span>, bring data to life with <span class="font-semibold">SQL</span>, and 
+                experiment with new technologies like <span class="font-semibold">Firebase</span> and <span class="font-semibold">Unity</span> for fun and growth.
+              </p>
+              <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                I believe that data is a story waiting to be told—and I love telling it. My work goes beyond spreadsheets: I’ve automated complex logistics processes, built interactive tools, and streamlined operations to save hours every day. 
+                Whether it’s optimizing inventory or exploring behavioral trends, I always keep curiosity and creativity close.
+              </p>
+              <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                Outside of work, you’ll find me <span class="italic">drawing, painting, throwing knives (safely!), making music, running, cycling</span>, or planning my next travel escape. 
+                I treat each project like a new adventure—whether it's coding, creating, or just enjoying the ride.
+              </p>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                I built this website to share not just what I do, but who I am. Feel free to explore my portfolio, 
+                check out my experience, or just say hello.
+              </p>
+            </div>
+            <div class="flex justify-center mt-50">
+              
+              <div class="container">
+                <div class="cube">
+                  <div style="--x:-1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                  </div>
+                  <div style="--x:0; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                  </div>
+                  <div style="--x:1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                  </div>
+                </div>
+                <div class="cube">
+                  <div style="--x:-1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                  </div>
+                  <div style="--x:0; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                  </div>
+                  <div style="--x:1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                  </div>
+                </div>
+                <div class="cube">
+                  <div style="--x:-1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                  </div>
+                  <div style="--x:0; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                  </div>
+                  <div style="--x:1; --y:0;">
+                    <span style="--i:3;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:1;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="education" class="section hidden-section">
+        <section class="bg-white py-16 px-6 md:px-12 lg:px-24">
+          <div></div>
+          <h2 class="text-4xl font-bold text-green-900 mb-4">Education</h2>
+            <div class="relative border-l-4 border-[#0d602e] pl-8 space-y-10 ">
+              <div class="group">
+                <div class="absolute w-4 h-4 bg-[#0d602e] rounded-full -left-2.5 mt-1"></div>
+                <h3 class="text-xl font-semibold text-[#082e17] group-hover:translate-x-1 transition-transform duration-300">Bachelor of Science in Information Technology</h3>
+                <p class="text-md text-gray-700 group-hover:translate-x-1 transition-transform duration-300">Cebu Technological University - Main • 2025</p>
+                <p class="text-sm text-gray-600 mt-1 group-hover:translate-x-1 transition-transform duration-300">Thesis: POCKETCOLLEGE - A 2D MOBILE SIMULATION GAME FOR INCOMING SENIOR HIGH SCHOOL STUDENTS</p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#0d602e] text-white">Data Structures & Algorithm</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#186d3a] text-white">Web Development</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#082e17] text-white">Information Management</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#0d602e]/80 text-white">System Analysis</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#186d3a]/80 text-white">Mobile App Development</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#082e17]/80 text-white">Networking</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#0d602e] text-white">Information Assurance & Security</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#186d3a] text-white">Quantitative Methods: Modelling & Simulation</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#082e17] text-white">Human Computer Interaction</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#0d602e]/80 text-white">Discrete Mathematics</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#186d3a]/80 text-white">System Administration & Maintenance</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#082e17]/80 text-white">Object-Oriented Programming</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#082e17]/80 text-white">Networking</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#0d602e] text-white">System Integration & Architecture</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#186d3a] text-white">Digital Logic Design</span>
+                </div>
+              </div>
+              <div class="group">
+                <div class="absolute w-4 h-4 bg-[#0d602e] rounded-full -left-2.5 mt-1"></div>
+                <h3 class="text-xl font-semibold text-[#082e17] group-hover:translate-x-1 transition-transform duration-300">Senior High School – STEM Strand</h3>
+                <p class="text-md text-gray-700 group-hover:translate-x-1 transition-transform duration-300">University of Cebu • 2021</p>
+                <p class="text-sm text-gray-600 mt-1 group-hover:translate-x-1 transition-transform duration-300">Thesis: Papermaking Abilities of <i>I. Aquatica</i> (Water Spinach) and <i>T. Catappa</i> (Talisay Tree) Leaves with Sodium Hypochlorite and Calcium Carbonate as Additives</p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#0d602e] text-white">Robotics</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#186d3a] text-white">Pre-Calculus</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#082e17] text-white">Basic Calculus</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#0d602e]/80 text-white">General Chemistry</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#186d3a]/80 text-white">General Physics</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#082e17]/80 text-white">General Biology</span>
+                  <span class="px-3 py-1 rounded-full text-sm font-medium bg-[#186d3a] text-white">SPSS</span>
+                </div>
+              </div>
+
+            </div>
+          
+        </section>
+      </section>
+
+      <section id="experience" class="section hidden-section">
+        <h2 class="text-2xl font-semibold mb-2">💼 Experience</h2>
+        <p>
+          <strong>Data Entry Specialist</strong><br>
+          Automated logistic and warehouse workflows using Python (Selenium, GUI, PDF tools). Reduced hours-long tasks to a few seconds. Coordinated complex shipment routes.
+        </p>
+      </section>
+
+      <section id="projects" class="section hidden-section">
+        <h2 class="text-2xl font-semibold mb-2">🧪 Projects</h2>
+        <ul class="space-y-2">
+          <li><a href="https://github.com/your-username/supply-chain-tracker" class="text-green-700 hover:underline" target="_blank">📦 Supply Chain Tracker</a></li>
+          <li><a href="https://yourusername.streamlit.app/forecast" class="text-green-700 hover:underline" target="_blank">📈 Inventory Forecast App</a></li>
+          <li><a href="https://github.com/your-username/nyc-taxi-capstone" class="text-green-700 hover:underline" target="_blank">🚕 NYC Taxi Fare Predictor</a></li>
+        </ul>
+      </section>
+
+      <section id="skills" class="section hidden-section">
+        <h2 class="text-2xl font-semibold mb-2">🛠️ Skills</h2>
+        <p>Coming soon: screenshots of project dashboards and designs.</p>
+      </section>
+
+      <section id="contact" class="section hidden-section">
+        <h2 class="text-2xl font-semibold mb-2">✉️ Contact</h2>
+        <p>Email: <a href="mailto:you@example.com" class="text-blue-600 hover:underline">you@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/your-username" target="_blank" class="text-blue-600 hover:underline">github.com/your-username</a></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
